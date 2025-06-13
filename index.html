@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Flix - Premium Streaming Services</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #0f0c29;
+            color: #fff;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: rgba(15, 12, 41, 0.8);
+            border-bottom: 2px solid #4e54c8;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #8f94fb;
+        }
+        
+        /* Products Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .product-card {
+            background: rgba(39, 37, 94, 0.7);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #4e54c8;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #4e54c8;
+        }
+        
+        .product-details {
+            padding: 20px;
+        }
+        
+        .product-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #8f94fb;
+        }
+        
+        .product-features {
+            margin-bottom: 15px;
+            color: #ccc;
+            line-height: 1.5;
+        }
+        
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #8f94fb;
+            margin-bottom: 15px;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .contact-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(to right, #8f94fb, #4e54c8);
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background: rgba(15, 12, 41, 0.8);
+            border-top: 2px solid #4e54c8;
+            margin-top: 40px;
+        }
+        
+        .footer-contact {
+            margin: 20px 0;
+        }
+        
+        .payment-methods {
+            margin: 20px 0;
+            color: #8f94fb;
+        }
+        
+        .guarantee {
+            font-style: italic;
+            color: #ccc;
+            margin: 10px 0;
+        }
+        
+        .final-tagline {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            color: #8f94fb;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">ROYAL FLIX</h1>
+            <p class="tagline">Premium Streaming Services at Budget Prices</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="products">
+            <!-- Netflix Premium -->
+            <div class="product-card">
+                <img src="./images/BrandAssets_Logos_01-Wordmark.jpg" alt="Netflix Premium" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Netflix Premium</h2>
+                    <p class="product-features">1 Screen | 4K Ultra HD</p>
+                    <p class="product-price">💰 Rs. 429/month</p>
+                    <a href="https://wa.me/923700666140?text=Hi%20Royal%20Flix,%20I'm%20interested%20in%20Netflix%20Premium%20subscription" class="contact-btn">Contact on WhatsApp</a>
+                </div>
+            </div>
+            
+            <!-- Amazon Prime Video -->
+            <div class="product-card">
+                <img src="./images/prime.jpg" alt="Amazon Prime Video" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Amazon Prime Video</h2>
+                    <p class="product-features">1 Screen | Full HD</p>
+                    <p class="product-price">💰 Rs. 189/month</p>
+                    <a href="https://wa.me/923700666140?text=Hi%20Royal%20Flix,%20I'm%20interested%20in%20Amazon%20Prime%20Video%20subscription" class="contact-btn">Contact on WhatsApp</a>
+                </div>
+            </div>
+            
+            <!-- Disney+ -->
+            <div class="product-card">
+                <img src="./images/disney.png" alt="Disney+" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Disney+</h2>
+                    <p class="product-features">1 Screen | HD/4K | Disney, Marvel, Star Wars & more</p>
+                    <p class="product-price">💰 Rs. 429/month</p>
+                    <a href="https://wa.me/923700666140?text=Hi%20Royal%20Flix,%20I'm%20interested%20in%20Disney+%20subscription" class="contact-btn">Contact on WhatsApp</a>
+                </div>
+            </div>
+            
+            <!-- Paramount+ -->
+            <div class="product-card">
+                <img src="./images/paramount_bhjs.png" alt="Paramount+" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Paramount+</h2>
+                    <p class="product-features">1 Screen | Hollywood Movies & Live TV</p>
+                    <p class="product-price">💰 Rs. 430/month</p>
+                    <a href="https://wa.me/923700666140?text=Hi%20Royal%20Flix,%20I'm%20interested%20in%20Paramount+%20subscription" class="contact-btn">Contact on WhatsApp</a>
+                </div>
+            </div>
+            
+            <!-- HBO Max -->
+            <div class="product-card">
+                <img src="./images/hbo.webp" alt="HBO Max" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">HBO Max</h2>
+                    <p class="product-features">1 Screen | HBO Originals & Blockbusters</p>
+                    <p class="product-price">💰 Rs. 429/month</p>
+                    <a href="https://wa.me/923700666140?text=Hi%20Royal%20Flix,%20I'm%20interested%20in%20HBO%20Max%20subscription" class="contact-btn">Contact on WhatsApp</a>
+                </div>
+            </div>
+            
+            <!-- YouTube Premium -->
+            <div class="product-card">
+                <img src="./images/YTP_logo_social_1200x630.png" alt="YouTube Premium" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">YouTube Premium</h2>
+                    <p class="product-features">1 User | No Ads | Background Play | YouTube Music</p>
+                    <p class="product-price">💰 Rs. 420/month</p>
+                    <a href="https://wa.me/923700666140?text=Hi%20Royal%20Flix,%20I'm%20interested%20in%20YouTube%20Premium%20subscription" class="contact-btn">Contact on WhatsApp</a>
+                </div>
+            </div>
+            
+            <!-- Spotify Premium -->
+            <div class="product-card">
+                <img src="./images/spotify.jpg" alt="Spotify Premium" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Spotify Premium</h2>
+                    <p class="product-features">1 User | Ad-Free Music | Unlimited Skips | Offline</p>
+                    <p class="product-price">💰 Rs. 279/month</p>
+                    <a href="https://wa.me/923700666140?text=Hi%20Royal%20Flix,%20I'm%20interested%20in%20Spotify%20Premium%20subscription" class="contact-btn">Contact on WhatsApp</a>
+                </div>
+            </div>
+            
+                       
+            <!-- Canva Premium -->
+            <div class="product-card">
+                <img src="./images/canva.png" alt="Canva Premium" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Canva Premium</h2>
+                    <p class="product-features">All Premium Features</p>
+                    <p class="product-price">💰 Rs. 349/month</p>
+                    <a href="https://wa.me/923700666140?text=Hi%20Royal%20Flix,%20I'm%20interested%20in%20Canva%20Premium%20subscription" class="contact-btn">Contact on WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p class="guarantee">💯 100% Working – Instant Activation – Trusted Seller</p>
+            <div class="payment-methods">
+                <p>📲 Payment Options: EasyPaisa | JazzCash | Bank Transfer</p>
+            </div>
+            <div class="footer-contact">
+                <p>📞 Contact/WhatsApp: <a href="https://wa.me/923700666140" style="color: #8f94fb;">0370-0666140</a></p>
+                <a href="https://wa.me/923700666140" class="contact-btn" style="max-width: 300px; margin: 10px auto;">Contact on WhatsApp</a>
+            </div>
+            <p class="final-tagline">🎥 Watch | Listen | Enjoy — Premium Feels at Budget Prices!</p>
+        </div>
+    </footer>
+</body>
+</html>
